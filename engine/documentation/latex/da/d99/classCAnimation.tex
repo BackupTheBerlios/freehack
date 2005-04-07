@@ -1,0 +1,346 @@
+\section{CAnimation Klassenreferenz}
+\label{da/d99/classCAnimation}\index{CAnimation@{CAnimation}}
+Die Klasse CAnimation dient dazu Animationen darzustellen.  
+
+
+{\tt \#include $<$animation.h$>$}
+
+Klassendiagramm f\"{u}r CAnimation::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{da/d99/classCAnimation}
+\end{center}
+\end{figure}
+\subsection*{\"{O}ffentliche Methoden}
+\begin{CompactItemize}
+\item 
+{\bf CAnimation} (SDL\_\-Surface $\ast$dest)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+virtual {\bf $\sim$CAnimation} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+virtual void {\bf Set\-Animationspeed} (float s)
+\begin{CompactList}\small\item\em Setzt {\em animationspeed\/} auf {\em s\/}. \item\end{CompactList}\item 
+virtual float {\bf Get\-Animationspeed} ()
+\begin{CompactList}\small\item\em Gibt {\em animationspeed\/} zur\"{u}ck. \item\end{CompactList}\item 
+virtual void {\bf Set\-Default\-Frame} (int n)
+\begin{CompactList}\small\item\em Setzt {\em defaultframe\/} auf {\em n\/}. \item\end{CompactList}\item 
+virtual int {\bf Get\-Default\-Frame} ()
+\begin{CompactList}\small\item\em Gibt {\em defaultframe\/} zur\"{u}ck. \item\end{CompactList}\item 
+virtual bool {\bf Is\-Running} ()
+\begin{CompactList}\small\item\em Gibt den Wert von {\em running\/} zur\"{u}ck. \item\end{CompactList}\item 
+void {\bf Start} ()
+\begin{CompactList}\small\item\em Startet die Animation. \item\end{CompactList}\item 
+void {\bf Stop} ()
+\begin{CompactList}\small\item\em Die Funktion stoppt beendet die Animation. \item\end{CompactList}\item 
+virtual void {\bf Set\-Current\-Frame} ()
+\begin{CompactList}\small\item\em Berechnet den aktuellen Frame und setzt {\em currentframe\/}. \item\end{CompactList}\item 
+virtual void {\bf Set\-Playtime} ()
+\begin{CompactList}\small\item\em Berechnet die Spielzeit. \item\end{CompactList}\item 
+void {\bf Draw} ()
+\begin{CompactList}\small\item\em Zeichnet den aktuellen Frame. \item\end{CompactList}\end{CompactItemize}
+\subsection*{\"{O}ffentliche Attribute}
+\begin{CompactItemize}
+\item 
+{\bf CList}$<$ {\bf CImage} $\ast$ $>$ {\bf Image\-List}
+\begin{CompactList}\small\item\em Die Liste mit den Bildern. \item\end{CompactList}\item 
+int {\bf delaytime}
+\begin{CompactList}\small\item\em Die Zeit die zwischen den Frames gewartet werden soll in Milisekunden. \item\end{CompactList}\item 
+bool {\bf running}
+\begin{CompactList}\small\item\em {\tt true} wenn die Animation gerade l\"{a}uft, ansonsten {\tt false}. \item\end{CompactList}\item 
+long {\bf starttime}
+\begin{CompactList}\small\item\em Die Zeit seit SDL initialisiert wurde in Milisekunden. Wird ben\"{o}tigt um {\em playtime\/} zu berechnen. \item\end{CompactList}\item 
+long {\bf playtime}
+\begin{CompactList}\small\item\em Die Zeit, die die Animation schon l\"{a}uft in Milisekunden. \item\end{CompactList}\item 
+float {\bf animationspeed}
+\begin{CompactList}\small\item\em Mit {\em animationspeed\/} kann die Geschwindigkeit, mit der die Animation l\"{a}uft beeinflusst werden. \item\end{CompactList}\item 
+int {\bf defaultframe}
+\begin{CompactList}\small\item\em Der Frame wird gezeichnet, wenn die Animation nicht l\"{a}uft. \item\end{CompactList}\item 
+int {\bf currentframe}
+\begin{CompactList}\small\item\em Aktueller Frame. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Ausf\"{u}hrliche Beschreibung}
+Die Klasse CAnimation dient dazu Animationen darzustellen. 
+
+Die einzelnen Frames sind Objekte vom Typ {\bf CImage}{\rm (S.\,\pageref{d9/d8d/classCImage})}, die in einer {\bf CList}{\rm (S.\,\pageref{da/d2a/classCList})} abgelegt sind. Informationen zur Benutzung der Klasse finden sie auf der Seite {\bf Die Benutzung von CAnimation}{\rm (S.\,\pageref{CAnimation_Usage})}
+
+\begin{Desc}
+\item[Autor:]Bodo Akdeniz \end{Desc}
+\begin{Desc}
+\item[Datum:]05.04.05 \end{Desc}
+\begin{Desc}
+\item[Version:]0.3 \end{Desc}
+\begin{Desc}
+\item[Beispiele: ]\par
+
+
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+
+
+Definiert in Zeile 42 der Datei animation.h.
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\index{CAnimation@{CAnimation}!CAnimation@{CAnimation}}
+\index{CAnimation@{CAnimation}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}CAnimation::CAnimation (SDL\_\-Surface $\ast$ {\em dest})}\label{da/d99/classCAnimation_a0}
+
+
+Constructor. 
+
+siehe {\bf CSurface\-Child(SDL\_\-Surface $\ast$dest)}{\rm (S.\,\pageref{d3/d44/classCSurfaceChild_a0})}. Zus\"{a}tzlich setzt die Funktion noch einige Defaultwerte der Variablen.
+
+Definiert in Zeile 11 der Datei animation.cc.
+
+Benutzt animationspeed, defaultframe, delaytime und running.\index{CAnimation@{CAnimation}!~CAnimation@{$\sim$CAnimation}}
+\index{~CAnimation@{$\sim$CAnimation}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}CAnimation::$\sim${\bf CAnimation} ()\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a1}
+
+
+Destructor. 
+
+
+
+Definiert in Zeile 19 der Datei animation.cc.
+
+\subsection{Dokumentation der Elementfunktionen}
+\index{CAnimation@{CAnimation}!Draw@{Draw}}
+\index{Draw@{Draw}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Draw ()}\label{da/d99/classCAnimation_a11}
+
+
+Zeichnet den aktuellen Frame. 
+
+Die Funktion ruft zuerst {\bf Set\-Current\-Frame()}{\rm (S.\,\pageref{da/d99/classCAnimation_a9})} auf und zeichnet dann das Bild des errechneten Frame in das Ausgabe-Suface, das mit {\bf CSurface\-Child::Set\-Destination\-Surface()}{\rm (S.\,\pageref{d3/d44/classCSurfaceChild_a2})} gesetzt wurde.\begin{Desc}
+\item[Beispiele: ]\par
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+Definiert in Zeile 77 der Datei animation.cc.
+
+Benutzt currentframe, CSurface\-Child::Get\-Destination\-Surface(), CSurface\-Child::Get\-X(), CSurface\-Child::Get\-Y(), Image\-List und Set\-Current\-Frame().\index{CAnimation@{CAnimation}!GetAnimationspeed@{GetAnimationspeed}}
+\index{GetAnimationspeed@{GetAnimationspeed}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float CAnimation::Get\-Animationspeed ()\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a3}
+
+
+Gibt {\em animationspeed\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[Siehe auch:]{\bf Set\-Animationspeed()}{\rm (S.\,\pageref{da/d99/classCAnimation_a2})}\end{Desc}
+
+
+Definiert in Zeile 28 der Datei animation.cc.\index{CAnimation@{CAnimation}!GetDefaultFrame@{GetDefaultFrame}}
+\index{GetDefaultFrame@{GetDefaultFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int CAnimation::Get\-Default\-Frame ()\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a5}
+
+
+Gibt {\em defaultframe\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[Siehe auch:]{\bf Set\-Default\-Frame()}{\rm (S.\,\pageref{da/d99/classCAnimation_a4})}\end{Desc}
+
+
+Definiert in Zeile 38 der Datei animation.cc.
+
+Wird benutzt von Set\-Current\-Frame().\index{CAnimation@{CAnimation}!IsRunning@{IsRunning}}
+\index{IsRunning@{IsRunning}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool CAnimation::Is\-Running ()\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a6}
+
+
+Gibt den Wert von {\em running\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]gibt {\tt true} zur\"{u}ck, wenn die Animation gerade l\"{a}uft, ansonsten {\tt false}.\end{Desc}
+\begin{Desc}
+\item[Beispiele: ]\par
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+Definiert in Zeile 43 der Datei animation.cc.
+
+Wird benutzt von Set\-Current\-Frame().\index{CAnimation@{CAnimation}!SetAnimationspeed@{SetAnimationspeed}}
+\index{SetAnimationspeed@{SetAnimationspeed}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Set\-Animationspeed (float {\em s})\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a2}
+
+
+Setzt {\em animationspeed\/} auf {\em s\/}. 
+
+\begin{Desc}
+\item[Siehe auch:]{\bf Get\-Animationspeed()}{\rm (S.\,\pageref{da/d99/classCAnimation_a3})}\end{Desc}
+\begin{Desc}
+\item[Beispiele: ]\par
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+Definiert in Zeile 23 der Datei animation.cc.
+
+Benutzt animationspeed.\index{CAnimation@{CAnimation}!SetCurrentFrame@{SetCurrentFrame}}
+\index{SetCurrentFrame@{SetCurrentFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Set\-Current\-Frame ()\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a9}
+
+
+Berechnet den aktuellen Frame und setzt {\em currentframe\/}. 
+
+Die Funktion berrechnet den aktuellen Frame aus {\em delaytime\/}, {\em playtime\/} und der Anzahl der frames. Zuvor wird {\bf Set\-Playtime()}{\rm (S.\,\pageref{da/d99/classCAnimation_a10})} aufgerufen. \par
+ L\"{a}uft die Animation nicht, wird {\em currentframe\/} auf {\em defaultframe\/} gesetzt. \par
+ Um den Frame zu berrechnen wird folgende Formel verwendet: \[ frameno. = {playtime \bmod \left( framecount \cdot delaytime \right) \over delaytime} \]
+
+Definiert in Zeile 59 der Datei animation.cc.
+
+Benutzt CList$<$ T $>$::Count(), currentframe, delaytime, Get\-Default\-Frame(), Image\-List, Is\-Running(), playtime und Set\-Playtime().
+
+Wird benutzt von Draw().\index{CAnimation@{CAnimation}!SetDefaultFrame@{SetDefaultFrame}}
+\index{SetDefaultFrame@{SetDefaultFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Set\-Default\-Frame (int {\em n})\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a4}
+
+
+Setzt {\em defaultframe\/} auf {\em n\/}. 
+
+\begin{Desc}
+\item[Siehe auch:]{\bf Get\-Default\-Frame()}{\rm (S.\,\pageref{da/d99/classCAnimation_a5})}\end{Desc}
+
+
+Definiert in Zeile 33 der Datei animation.cc.
+
+Benutzt defaultframe.\index{CAnimation@{CAnimation}!SetPlaytime@{SetPlaytime}}
+\index{SetPlaytime@{SetPlaytime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Set\-Playtime ()\hspace{0.3cm}{\tt  [virtual]}}\label{da/d99/classCAnimation_a10}
+
+
+Berechnet die Spielzeit. 
+
+Die Funktion berechnet die aktuelle Spielzeit, der Animation und setzt {\em playtime\/} entsprechend.
+
+Definiert in Zeile 72 der Datei animation.cc.
+
+Benutzt playtime.
+
+Wird benutzt von Set\-Current\-Frame().\index{CAnimation@{CAnimation}!Start@{Start}}
+\index{Start@{Start}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Start ()}\label{da/d99/classCAnimation_a7}
+
+
+Startet die Animation. 
+
+Die Funktion bereitet die Variablen vor und startet die Animation.\begin{Desc}
+\item[Beispiele: ]\par
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+Definiert in Zeile 48 der Datei animation.cc.
+
+Benutzt running und starttime.\index{CAnimation@{CAnimation}!Stop@{Stop}}
+\index{Stop@{Stop}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void CAnimation::Stop ()}\label{da/d99/classCAnimation_a8}
+
+
+Die Funktion stoppt beendet die Animation. 
+
+\begin{Desc}
+\item[Beispiele: ]\par
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+Definiert in Zeile 54 der Datei animation.cc.
+
+Benutzt running.
+
+\subsection{Dokumentation der Datenelemente}
+\index{CAnimation@{CAnimation}!animationspeed@{animationspeed}}
+\index{animationspeed@{animationspeed}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf CAnimation::animationspeed}}\label{da/d99/classCAnimation_o5}
+
+
+Mit {\em animationspeed\/} kann die Geschwindigkeit, mit der die Animation l\"{a}uft beeinflusst werden. 
+
+Der Wert von {\em animationspeed\/} wird mit {\em delaytime\/} multipliziert. D.h. je kleiner der Wert, umso schneller l\"{a}uft die Animation, je gr\"{o}\ss{}er der Wert umso langsamer l\"{a}uft sie.
+
+Definiert in Zeile 66 der Datei animation.h.
+
+Wird benutzt von CAnimation() und Set\-Animationspeed().\index{CAnimation@{CAnimation}!currentframe@{currentframe}}
+\index{currentframe@{currentframe}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::currentframe}}\label{da/d99/classCAnimation_o7}
+
+
+Aktueller Frame. 
+
+
+
+Definiert in Zeile 72 der Datei animation.h.
+
+Wird benutzt von Draw() und Set\-Current\-Frame().\index{CAnimation@{CAnimation}!defaultframe@{defaultframe}}
+\index{defaultframe@{defaultframe}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::defaultframe}}\label{da/d99/classCAnimation_o6}
+
+
+Der Frame wird gezeichnet, wenn die Animation nicht l\"{a}uft. 
+
+
+
+Definiert in Zeile 69 der Datei animation.h.
+
+Wird benutzt von CAnimation() und Set\-Default\-Frame().\index{CAnimation@{CAnimation}!delaytime@{delaytime}}
+\index{delaytime@{delaytime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::delaytime}}\label{da/d99/classCAnimation_o1}
+
+
+Die Zeit die zwischen den Frames gewartet werden soll in Milisekunden. 
+
+
+
+Definiert in Zeile 49 der Datei animation.h.
+
+Wird benutzt von CAnimation() und Set\-Current\-Frame().\index{CAnimation@{CAnimation}!ImageList@{ImageList}}
+\index{ImageList@{ImageList}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf CList}$<${\bf CImage}$\ast$$>$ {\bf CAnimation::Image\-List}}\label{da/d99/classCAnimation_o0}
+
+
+Die Liste mit den Bildern. 
+
+\begin{Desc}
+\item[Beispiele: ]\par
+{\bf CAnimation1.cc}.\end{Desc}
+
+
+Definiert in Zeile 46 der Datei animation.h.
+
+Wird benutzt von Draw() und Set\-Current\-Frame().\index{CAnimation@{CAnimation}!playtime@{playtime}}
+\index{playtime@{playtime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long {\bf CAnimation::playtime}}\label{da/d99/classCAnimation_o4}
+
+
+Die Zeit, die die Animation schon l\"{a}uft in Milisekunden. 
+
+
+
+Definiert in Zeile 58 der Datei animation.h.
+
+Wird benutzt von Set\-Current\-Frame() und Set\-Playtime().\index{CAnimation@{CAnimation}!running@{running}}
+\index{running@{running}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CAnimation::running}}\label{da/d99/classCAnimation_o2}
+
+
+{\tt true} wenn die Animation gerade l\"{a}uft, ansonsten {\tt false}. 
+
+
+
+Definiert in Zeile 52 der Datei animation.h.
+
+Wird benutzt von CAnimation(), Start() und Stop().\index{CAnimation@{CAnimation}!starttime@{starttime}}
+\index{starttime@{starttime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long {\bf CAnimation::starttime}}\label{da/d99/classCAnimation_o3}
+
+
+Die Zeit seit SDL initialisiert wurde in Milisekunden. Wird ben\"{o}tigt um {\em playtime\/} zu berechnen. 
+
+
+
+Definiert in Zeile 55 der Datei animation.h.
+
+Wird benutzt von Start().
+
+Die Dokumentation f\"{u}r diese Klasse wurde erzeugt aufgrund der Dateien:\begin{CompactItemize}
+\item 
+src/{\bf animation.h}\item 
+src/{\bf animation.cc}\end{CompactItemize}

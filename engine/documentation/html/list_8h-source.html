@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SDL Classes: versuch2/list.h Quellcode</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.3.9.1 -->
+<div class="qindex"><a class="qindex" href="index.html">Hauptseite</a> | <a class="qindex" href="hierarchy.html">Klassenhierarchie</a> | <a class="qindex" href="annotated.html">Auflistung&nbsp;der&nbsp;Klassen</a> | <a class="qindex" href="dirs.html">Verzeichnisse</a> | <a class="qindex" href="files.html">Auflistung&nbsp;der&nbsp;Dateien</a> | <a class="qindex" href="functions.html">Klassen-Elemente</a> | <a class="qindex" href="pages.html">Zusätzliche&nbsp;Informationen</a></div>
+<div class="nav">
+<a class="el" href="dir_000000.html">versuch2</a></div>
+<h1>list.h</h1><a href="list_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment">00001 
+00015 <span class="preprocessor">#ifndef LIST_H</span>
+00016 <span class="preprocessor"></span><span class="preprocessor">#define LIST_H</span>
+00017 <span class="preprocessor"></span>
+00018 <span class="preprocessor">#include &lt;vector&gt;</span>
+00019 
+00020 <span class="comment">// CList ist eine Vektorklasse.</span>
+<a name="l00031"></a><a class="code" href="classCList.html">00031</a> <span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code" href="classCList.html">CList</a><span class="comment">// : public std::vector&lt;T&gt;</span>
+00032 {
+00033 <span class="keyword">public</span>:
+00035 <span class="comment">//      virtual ~CList();</span>
+00036 
+00038 
+00041         <span class="keywordtype">void</span> Add();
+00042 
+00044 
+00046 <span class="comment">//      virtual void Clear();</span>
+00047 };
+00048 
+00049 
+00050 <span class="comment">// Implementation der Funktionen</span>
+00051 
+<a name="l00052"></a><a class="code" href="classCList.html#a0">00052</a> <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="classCList.html#a0">CList&lt;T&gt;::Add</a>()
+00053 {
+00054 <span class="comment">//      std::vector&lt;T&gt;::push_back(obj);</span>
+00055 }
+00056 
+00057 <span class="comment">/*</span>
+00058 <span class="comment">template &lt;class T&gt;</span>
+00059 <span class="comment">void CList&lt;T&gt;::Clear()</span>
+00060 <span class="comment">{</span>
+00061 <span class="comment">        clear();</span>
+00062 <span class="comment">}</span>
+00063 <span class="comment">*/</span>
+00064 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Erzeugt am Sun Apr 3 16:41:05 2005 für SDL Classes von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.3.9.1 </small></address>
+</body>
+</html>

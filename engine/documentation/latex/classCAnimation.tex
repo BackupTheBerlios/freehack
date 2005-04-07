@@ -1,0 +1,403 @@
+\section{CAnimation Klassenreferenz}
+\label{classCAnimation}\index{CAnimation@{CAnimation}}
+CAnimation ist eine Klasse um Animationen zu laden und zu zeichnen.  
+
+
+{\tt \#include $<$animation.h$>$}
+
+Klassendiagramm f\"{u}r CAnimation::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classCAnimation}
+\end{center}
+\end{figure}
+\subsection*{\"{O}ffentliche Methoden}
+\begin{CompactItemize}
+\item 
+{\bf CAnimation} (SDL\_\-Surface $\ast$dest)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+virtual {\bf $\sim$CAnimation} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+virtual void {\bf Add\-Frame} ({\bf CAnimation\-Image} $\ast$im)
+\begin{CompactList}\small\item\em F\"{u}gt der {\em image-Liste\/} ein neues Bild hinzu. \item\end{CompactList}\item 
+virtual void {\bf Load\-From\-File} (std::string file)
+\begin{CompactList}\small\item\em L\"{a}d eine Animation. \item\end{CompactList}\item 
+virtual void {\bf Set\-Current\-Frame} (int i)
+\begin{CompactList}\small\item\em Gibt den Frame an der gezeichnet werden soll. \item\end{CompactList}\item 
+virtual void {\bf Set\-Animationspeed} (float speed)
+\begin{CompactList}\small\item\em Setzt {\em animationspeed\/}. \item\end{CompactList}\item 
+virtual int {\bf Calculate\-Current\-Frame} ()
+\begin{CompactList}\small\item\em Berechnet den aktuellen Frame. \item\end{CompactList}\item 
+virtual void {\bf Set\-Current\-Frame} ()
+\begin{CompactList}\small\item\em Berechnet den aktuellen Frame und setzt {\em currentframe\/}. \item\end{CompactList}\item 
+virtual int {\bf Calculate\-Playtime} ()
+\begin{CompactList}\small\item\em Ermittelt die gesamte Spielzeit der Animation in Milisekunden. \item\end{CompactList}\item 
+virtual void {\bf Set\-Playtime} (int n)
+\begin{CompactList}\small\item\em Setzt die Spielzeit. \item\end{CompactList}\item 
+virtual void {\bf Set\-Playtime} ()
+\begin{CompactList}\small\item\em Berechnet und setzt {\em playtime\/}. \item\end{CompactList}\item 
+virtual void {\bf Start\-Animation} ()
+\begin{CompactList}\small\item\em Startet die Animation. \item\end{CompactList}\item 
+virtual void {\bf Stop\-Animation} ()
+\begin{CompactList}\small\item\em Stoppt die Animation. \item\end{CompactList}\item 
+virtual bool {\bf Is\-Running} ()
+\begin{CompactList}\small\item\em Gibt den Wert von running zur\"{u}ck. \item\end{CompactList}\item 
+virtual void {\bf Set\-Default\-Frame} (int n)
+\begin{CompactList}\small\item\em Setzt die Nummer des Frames die gezeichnet werden soll, wenn die Animation steht. \item\end{CompactList}\item 
+virtual int {\bf Get\-Default\-Frame} ()
+\begin{CompactList}\small\item\em Gibt {\em defaultframe\/} zur\"{u}ck. \item\end{CompactList}\item 
+virtual void {\bf Draw} ()
+\begin{CompactList}\small\item\em Zeichnet den aktuellen Frame an die durch {\em x\/} und {\em y\/} definierte Position. \item\end{CompactList}\item 
+virtual void {\bf Draw} (int xpos, int ypos)
+\begin{CompactList}\small\item\em Zeichnet den aktuellen Frame an durch {\em xpos\/} und {\em ypos\/} definierte Position. \item\end{CompactList}\item 
+virtual {\bf CAnimation\-Image} $\ast$ {\bf Get\-Current\-Image} ()
+\begin{CompactList}\small\item\em Gibt das Bild des aktuellen Frames zur\"{u}ck. \item\end{CompactList}\item 
+virtual float {\bf Get\-Animationspeed} ()
+\begin{CompactList}\small\item\em Gibt den Wert von {\em animationspeed\/} zur\"{u}ck. \item\end{CompactList}\item 
+virtual int {\bf Get\-Current\-Frame} ()
+\begin{CompactList}\small\item\em Gibt {\em currentframe\/} zur\"{u}ck {\bf ohne} es vorher neu zu berrechnen. \item\end{CompactList}\end{CompactItemize}
+\subsection*{\"{O}ffentliche Attribute}
+\begin{CompactItemize}
+\item 
+int {\bf imagecount}
+\begin{CompactList}\small\item\em Die Anzahl der Bilder, aus der die Animation besteht. \item\end{CompactList}\item 
+int {\bf currentframe}
+\begin{CompactList}\small\item\em Die Nummer des gerade Frames, der als n\"{a}chstes gezeichnet werden soll. \item\end{CompactList}\item 
+{\bf CAnimation\-Image} $\ast$$\ast$ {\bf image}
+\begin{CompactList}\small\item\em Die Liste der Bilder die f\"{u}r die Animation ben\"{o}tigt wird. \item\end{CompactList}\item 
+int {\bf playtime}
+\begin{CompactList}\small\item\em Die Zeit. die die Animation schon l\"{a}uft in Milisekunden. \item\end{CompactList}\item 
+int {\bf fullplaytime}
+\begin{CompactList}\small\item\em Die Zeit, die die Animation braucht um einmal komplett durchzulaufen in Milisekunden. \item\end{CompactList}\item 
+long {\bf starttime}
+\begin{CompactList}\small\item\em Der Zeitpunkt an dem die Animation gestartet wurde als UNIX Timestamp. \item\end{CompactList}\item 
+bool {\bf running}
+\begin{CompactList}\small\item\em Definiert ob die Animation l\"{a}uft (true) oder nicht (false). \item\end{CompactList}\item 
+float {\bf animationspeed}
+\begin{CompactList}\small\item\em Ein Wert f\"{u}r die Geschwindigkeit der Animation. \item\end{CompactList}\item 
+int {\bf defaultframe}
+\begin{CompactList}\small\item\em Der Frame der gezeigt werden soll, wenn die Animation nicht l\"{a}uft. Standardm\"{a}\ss{}ig 0. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Ausf\"{u}hrliche Beschreibung}
+CAnimation ist eine Klasse um Animationen zu laden und zu zeichnen. 
+
+Sie nutzt {\bf CAnimation\-Image}{\rm (S.\,\pageref{classCAnimationImage})} f\"{u}r die Frames. Mehr Informationen zur Benutzung der Klasse finden sie auf der Seite {\bf Benutzung von CAnimation}{\rm (S.\,\pageref{CAnimationUsage})}.
+
+\begin{Desc}
+\item[{\bf Noch zu erledigen}]Noch nicht nutzbar!!! 
+
+Es muss noch was dazu dass man einstellen kann ob sich die Animation wiederholen soll oder nicht. Au\ss{}erdem muss das dann noch irgendwo bearbeitet werden, DASS sie sich auch wiederholt, bzw. anh\"{a}lt, wenn sie fertig ist. 
+
+SCHEISSE!!!!!! Wir brauchen eine Klasse, die eine Position, und ein SDL\_\-Surface besitzt!!!! davon k\"{o}nnen wir auch die ableiten. Die einzelnen Bilder der Animation bekommen dann eben als Parent, das Surface der Animation. D.h. ggf. {\bf CSurface\-Child}{\rm (S.\,\pageref{classCSurfaceChild})} erweitern und hier einiges \"{a}ndern!!! 
+
+man k\"{o}nnte die Bilderliste auch noch in eine andere Klasse auslagern, von der wir diese dann ableiten. \end{Desc}
+
+
+\begin{Desc}
+\item[Autor:]Bodo Akdeniz \end{Desc}
+\begin{Desc}
+\item[Datum:]01.04.05 \end{Desc}
+\begin{Desc}
+\item[Version:]0.2 \end{Desc}
+
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\index{CAnimation@{CAnimation}!CAnimation@{CAnimation}}
+\index{CAnimation@{CAnimation}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}CAnimation::CAnimation (SDL\_\-Surface $\ast$ {\em dest})}\label{classCAnimation_a0}
+
+
+Constructor. 
+
+siehe {\bf CSurface\-Child::CSurface\-Child()}{\rm (S.\,\pageref{classCSurfaceChild_a0})}\index{CAnimation@{CAnimation}!~CAnimation@{$\sim$CAnimation}}
+\index{~CAnimation@{$\sim$CAnimation}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual CAnimation::$\sim${\bf CAnimation} ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a1}
+
+
+Destructor. 
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\index{CAnimation@{CAnimation}!AddFrame@{AddFrame}}
+\index{AddFrame@{AddFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Add\-Frame ({\bf CAnimation\-Image} $\ast$ {\em im})\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a2}
+
+
+F\"{u}gt der {\em image-Liste\/} ein neues Bild hinzu. 
+
+Nimmt {\em im\/} als letztes Element in {\em image\/}[] auf. \begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em im}]ist ein Zeiger auf ein {\bf CAnimation\-Image}{\rm (S.\,\pageref{classCAnimationImage})}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Siehe auch:]Add\-Frame(CImage $\ast$, int)\end{Desc}
+\index{CAnimation@{CAnimation}!CalculateCurrentFrame@{CalculateCurrentFrame}}
+\index{CalculateCurrentFrame@{CalculateCurrentFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual int CAnimation::Calculate\-Current\-Frame ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a6}
+
+
+Berechnet den aktuellen Frame. 
+
+Die Funktion berechnet anhand der Zeitdaten der Frames und der vergangenen Laufzeit der Animation den aktuellen Frame. \begin{Desc}
+\item[R\"{u}ckgabe:]Gibt die Nummer des ermittelten aktuellen Frames zur\"{u}ck. Dieser kann dann mit image[ermittelte\_\-nummer] verwendet werden.\end{Desc}
+\index{CAnimation@{CAnimation}!CalculatePlaytime@{CalculatePlaytime}}
+\index{CalculatePlaytime@{CalculatePlaytime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual int CAnimation::Calculate\-Playtime ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a8}
+
+
+Ermittelt die gesamte Spielzeit der Animation in Milisekunden. 
+
+Ermittelt die Spielzeit anhand der aktuellen Zeit und {\em starttime\/} \index{CAnimation@{CAnimation}!Draw@{Draw}}
+\index{Draw@{Draw}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Draw (int {\em xpos}, int {\em ypos})\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a17}
+
+
+Zeichnet den aktuellen Frame an durch {\em xpos\/} und {\em ypos\/} definierte Position. 
+
+Die Funktion macht das selbe wie {\bf Draw()}{\rm (S.\,\pageref{classCAnimation_a16})}, sie f\"{u}hrt aber zuvor noch CSurface\-Child::Set\-Position(xpos, ypos) aus. \begin{Desc}
+\item[Siehe auch:]{\bf Draw()}{\rm (S.\,\pageref{classCAnimation_a16})}\end{Desc}
+\index{CAnimation@{CAnimation}!Draw@{Draw}}
+\index{Draw@{Draw}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Draw ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a16}
+
+
+Zeichnet den aktuellen Frame an die durch {\em x\/} und {\em y\/} definierte Position. 
+
+\begin{Desc}
+\item[Siehe auch:]{\bf Draw(int, int)}{\rm (S.\,\pageref{classCAnimation_a17})}\end{Desc}
+\index{CAnimation@{CAnimation}!GetAnimationspeed@{GetAnimationspeed}}
+\index{GetAnimationspeed@{GetAnimationspeed}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual float CAnimation::Get\-Animationspeed ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a19}
+
+
+Gibt den Wert von {\em animationspeed\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]Die Funktion gibt den Wert von animationspeed zur\"{u}ck. \end{Desc}
+\begin{Desc}
+\item[Siehe auch:]{\bf animationspeed}{\rm (S.\,\pageref{classCAnimation_o7})}\end{Desc}
+\index{CAnimation@{CAnimation}!GetCurrentFrame@{GetCurrentFrame}}
+\index{GetCurrentFrame@{GetCurrentFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual int CAnimation::Get\-Current\-Frame ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a20}
+
+
+Gibt {\em currentframe\/} zur\"{u}ck {\bf ohne} es vorher neu zu berrechnen. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]Die Funktion gibt den Wert von {\em currentframe\/} zur\"{u}ck, {\bf ohne} ihn vorher neu zu berechnen.\end{Desc}
+\index{CAnimation@{CAnimation}!GetCurrentImage@{GetCurrentImage}}
+\index{GetCurrentImage@{GetCurrentImage}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf CAnimation\-Image}$\ast$ CAnimation::Get\-Current\-Image ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a18}
+
+
+Gibt das Bild des aktuellen Frames zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]Die Funktion gibt einen Zeiger auf {\em image\/}[currentframe] zur\"{u}ck.\end{Desc}
+\index{CAnimation@{CAnimation}!GetDefaultFrame@{GetDefaultFrame}}
+\index{GetDefaultFrame@{GetDefaultFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual int CAnimation::Get\-Default\-Frame ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a15}
+
+
+Gibt {\em defaultframe\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]Es wird der Wert von {\em defaultframe\/} zur\"{u}ckgegeben. \end{Desc}
+\begin{Desc}
+\item[Siehe auch:]{\bf Set\-Default\-Frame()}{\rm (S.\,\pageref{classCAnimation_a14})}\end{Desc}
+\index{CAnimation@{CAnimation}!IsRunning@{IsRunning}}
+\index{IsRunning@{IsRunning}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool CAnimation::Is\-Running ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a13}
+
+
+Gibt den Wert von running zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]true, wenn die Animation gerade l\"{a}uft, false wenn sie nicht l\"{a}uft\end{Desc}
+\index{CAnimation@{CAnimation}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Load\-From\-File (std::string {\em file})\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a3}
+
+
+L\"{a}d eine Animation. 
+
+\begin{Desc}
+\item[{\bf Noch zu erledigen}]Muss noch implementiert werden. Ich wei\ss{} noch nicht genau wie das funktionieren soll. \end{Desc}
+\index{CAnimation@{CAnimation}!SetAnimationspeed@{SetAnimationspeed}}
+\index{SetAnimationspeed@{SetAnimationspeed}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Set\-Animationspeed (float {\em speed})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classCAnimation_a5}
+
+
+Setzt {\em animationspeed\/}. 
+
+\begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em speed}]ist der Faktor mit dem die {\em delaytime\/} des aktuellen Frame multipliziert wird. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Siehe auch:]{\bf animationspeed}{\rm (S.\,\pageref{classCAnimation_o7})} \end{Desc}
+\begin{Desc}
+\item[Warnung:]Sollte nicht w\"{a}rend einer laufenden Animation aufgerufen werden, da diese sonst \char`\"{}durcheinander\char`\"{} kommt.\end{Desc}
+\index{CAnimation@{CAnimation}!SetCurrentFrame@{SetCurrentFrame}}
+\index{SetCurrentFrame@{SetCurrentFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Set\-Current\-Frame ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a7}
+
+
+Berechnet den aktuellen Frame und setzt {\em currentframe\/}. 
+
+Berechnet die Nummer des aktuellen Frames mit {\bf Calculate\-Current\-Frame()}{\rm (S.\,\pageref{classCAnimation_a6})} und setzt {\em currentframe\/} entsprechend. Will man {\em currentframe\/} manuell bestimmen muss man {\bf Set\-Current\-Frame(int)}{\rm (S.\,\pageref{classCAnimation_a4})} benutzen. \begin{Desc}
+\item[Siehe auch:]{\bf Set\-Current\-Frame(int)}{\rm (S.\,\pageref{classCAnimation_a4})}\end{Desc}
+\index{CAnimation@{CAnimation}!SetCurrentFrame@{SetCurrentFrame}}
+\index{SetCurrentFrame@{SetCurrentFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Set\-Current\-Frame (int {\em i})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classCAnimation_a4}
+
+
+Gibt den Frame an der gezeichnet werden soll. 
+
+Soll {\em currentframe\/} automatisch berechnet werden nutzen sie bitte {\bf Set\-Current\-Frame()}{\rm (S.\,\pageref{classCAnimation_a7})} \begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em i}]ist dabei die Nummer, die der Frame in {\em images\/}[] hat. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Siehe auch:]{\bf Set\-Current\-Frame()}{\rm (S.\,\pageref{classCAnimation_a7})} \end{Desc}
+\begin{Desc}
+\item[Warnung:]Diese Funktion sollte nicht benutzt werden, sie wird automatisch von {\bf Set\-Current\-Frame()}{\rm (S.\,\pageref{classCAnimation_a7})} aufgerufen und kann, sollte sie ohne die entsprechende Vorbereitung aufgerufen werden, zu Laufzeitfehlern f\"{u}hren.\end{Desc}
+\index{CAnimation@{CAnimation}!SetDefaultFrame@{SetDefaultFrame}}
+\index{SetDefaultFrame@{SetDefaultFrame}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Set\-Default\-Frame (int {\em n})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classCAnimation_a14}
+
+
+Setzt die Nummer des Frames die gezeichnet werden soll, wenn die Animation steht. 
+
+\begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em n}]ist der Wert auf den defaultframe gesetzt wird. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Siehe auch:]{\bf Get\-Default\-Frame()}{\rm (S.\,\pageref{classCAnimation_a15})}\end{Desc}
+\index{CAnimation@{CAnimation}!SetPlaytime@{SetPlaytime}}
+\index{SetPlaytime@{SetPlaytime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Set\-Playtime ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a10}
+
+
+Berechnet und setzt {\em playtime\/}. 
+
+Berechnet die Spielzeit mit {\bf Calculate\-Playtime()}{\rm (S.\,\pageref{classCAnimation_a8})} und setzt {\em playtime\/} entsprechend. \begin{Desc}
+\item[Siehe auch:]{\bf Set\-Playtime(int)}{\rm (S.\,\pageref{classCAnimation_a9})} \end{Desc}
+\begin{Desc}
+\item[Achtung:]Diese Funktion wird automatisch aufgerufen. Es ist (au\ss{}er vielleicht in seltenen Ausnahmef\"{a}llen) nicht n\"{o}tig sie manuell aufzurufen.\end{Desc}
+\index{CAnimation@{CAnimation}!SetPlaytime@{SetPlaytime}}
+\index{SetPlaytime@{SetPlaytime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Set\-Playtime (int {\em n})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classCAnimation_a9}
+
+
+Setzt die Spielzeit. 
+
+Setzt die Spielzeit auf {\em n\/} Milisekunden \begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em n}]ist die Anzahl der Milisekunden, auf die {\em playtime\/} gesetzt werden soll. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Siehe auch:]{\bf Set\-Playtime()}{\rm (S.\,\pageref{classCAnimation_a10})} \end{Desc}
+\begin{Desc}
+\item[Warnung:]Diese Funktion sollte nicht benutzt werden, sie wird automatisch von {\bf Set\-Playtime()}{\rm (S.\,\pageref{classCAnimation_a10})} aufgerufen und kann, sollte sie ohne die entsprechende Vorbereitung aufgerufen werden, zu Laufzeitfehlern f\"{u}hren.\end{Desc}
+\index{CAnimation@{CAnimation}!StartAnimation@{StartAnimation}}
+\index{StartAnimation@{StartAnimation}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Start\-Animation ()\hspace{0.3cm}{\tt  [virtual]}}\label{classCAnimation_a11}
+
+
+Startet die Animation. 
+
+Die Funktion bereitet alles f\"{u}r das laufen der Animation vor. \begin{Desc}
+\item[Siehe auch:]{\bf Stop\-Animation()}{\rm (S.\,\pageref{classCAnimation_a12})}\end{Desc}
+\index{CAnimation@{CAnimation}!StopAnimation@{StopAnimation}}
+\index{StopAnimation@{StopAnimation}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void CAnimation::Stop\-Animation ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classCAnimation_a12}
+
+
+Stoppt die Animation. 
+
+\begin{Desc}
+\item[Siehe auch:]{\bf Start\-Animation()}{\rm (S.\,\pageref{classCAnimation_a11})}\end{Desc}
+
+
+\subsection{Dokumentation der Datenelemente}
+\index{CAnimation@{CAnimation}!animationspeed@{animationspeed}}
+\index{animationspeed@{animationspeed}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf CAnimation::animationspeed}}\label{classCAnimation_o7}
+
+
+Ein Wert f\"{u}r die Geschwindigkeit der Animation. 
+
+Dieser Wert wird mit image[i]-$>$delaytime multipliziert, um die Geschwindigkeit der Animation ver\"{a}ndern zu k\"{o}nnen. D.h. ist animationspeed 1, l\"{a}uft die Animation in ihrem Originaltempo, ist es 2 mit halbem Tempo, 0.5 entspr\"{a}che folglich dem doppelten Tempo. \begin{Desc}
+\item[Siehe auch:]{\bf Set\-Animationspeed()}{\rm (S.\,\pageref{classCAnimation_a5})}\end{Desc}
+\index{CAnimation@{CAnimation}!currentframe@{currentframe}}
+\index{currentframe@{currentframe}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::currentframe}}\label{classCAnimation_o1}
+
+
+Die Nummer des gerade Frames, der als n\"{a}chstes gezeichnet werden soll. 
+
+\index{CAnimation@{CAnimation}!defaultframe@{defaultframe}}
+\index{defaultframe@{defaultframe}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::defaultframe}}\label{classCAnimation_o8}
+
+
+Der Frame der gezeigt werden soll, wenn die Animation nicht l\"{a}uft. Standardm\"{a}\ss{}ig 0. 
+
+\index{CAnimation@{CAnimation}!fullplaytime@{fullplaytime}}
+\index{fullplaytime@{fullplaytime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::fullplaytime}}\label{classCAnimation_o4}
+
+
+Die Zeit, die die Animation braucht um einmal komplett durchzulaufen in Milisekunden. 
+
+\index{CAnimation@{CAnimation}!image@{image}}
+\index{image@{image}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf CAnimation\-Image}$\ast$$\ast$ {\bf CAnimation::image}}\label{classCAnimation_o2}
+
+
+Die Liste der Bilder die f\"{u}r die Animation ben\"{o}tigt wird. 
+
+\index{CAnimation@{CAnimation}!imagecount@{imagecount}}
+\index{imagecount@{imagecount}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::imagecount}}\label{classCAnimation_o0}
+
+
+Die Anzahl der Bilder, aus der die Animation besteht. 
+
+\index{CAnimation@{CAnimation}!playtime@{playtime}}
+\index{playtime@{playtime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf CAnimation::playtime}}\label{classCAnimation_o3}
+
+
+Die Zeit. die die Animation schon l\"{a}uft in Milisekunden. 
+
+\index{CAnimation@{CAnimation}!running@{running}}
+\index{running@{running}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CAnimation::running}}\label{classCAnimation_o6}
+
+
+Definiert ob die Animation l\"{a}uft (true) oder nicht (false). 
+
+\index{CAnimation@{CAnimation}!starttime@{starttime}}
+\index{starttime@{starttime}!CAnimation@{CAnimation}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long {\bf CAnimation::starttime}}\label{classCAnimation_o5}
+
+
+Der Zeitpunkt an dem die Animation gestartet wurde als UNIX Timestamp. 
+
+
+
+Die Dokumentation f\"{u}r diese Klasse wurde erzeugt aufgrund der Datei:\begin{CompactItemize}
+\item 
+versuch2/{\bf animation.h}\end{CompactItemize}

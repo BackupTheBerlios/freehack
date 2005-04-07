@@ -1,0 +1,255 @@
+\begin{theindex}
+
+  \item {$\sim $CAnimation}
+    \subitem {CAnimation}, \hyperpage{18}
+  \item {$\sim $CAnimationImage}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{26}
+  \item {$\sim $CImage}
+    \subitem {CImage}, \hyperpage{29}
+  \item {$\sim $CSurfaceChild}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{37}
+
+  \indexspace
+
+  \item {Add}
+    \subitem {CList}, \hyperpage{34}
+  \item {animationspeed}
+    \subitem {CAnimation}, \hyperpage{23}
+
+  \indexspace
+
+  \item {CalculateCurrentFrame}
+    \subitem {CAnimation}, \hyperpage{18}
+  \item {CalculateFullPlaytime}
+    \subitem {CAnimation}, \hyperpage{18}
+  \item {CalculatePlaytime}
+    \subitem {CAnimation}, \hyperpage{18}
+  \item {CAnimation}, \hyperpage{15}
+    \subitem {$\sim $CAnimation}, \hyperpage{18}
+    \subitem {animationspeed}, \hyperpage{23}
+    \subitem {CalculateCurrentFrame}, \hyperpage{18}
+    \subitem {CalculateFullPlaytime}, \hyperpage{18}
+    \subitem {CalculatePlaytime}, \hyperpage{18}
+    \subitem {CAnimation}, \hyperpage{18}
+    \subitem {currentframe}, \hyperpage{23}
+    \subitem {defaultframe}, \hyperpage{23}
+    \subitem {Draw}, \hyperpage{19}
+    \subitem {fullplaytime}, \hyperpage{24}
+    \subitem {GetAnimationspeed}, \hyperpage{19}
+    \subitem {GetCurrentFrame}, \hyperpage{19}
+    \subitem {GetCurrentImage}, \hyperpage{20}
+    \subitem {GetDefaultFrame}, \hyperpage{20}
+    \subitem {ImageList}, \hyperpage{24}
+    \subitem {IsRunning}, \hyperpage{20}
+    \subitem {LoadFromFile}, \hyperpage{20}
+    \subitem {playtime}, \hyperpage{24}
+    \subitem {running}, \hyperpage{24}
+    \subitem {SetAnimationspeed}, \hyperpage{20}
+    \subitem {SetCurrentFrame}, \hyperpage{21}
+    \subitem {SetDefaultFrame}, \hyperpage{21}
+    \subitem {SetPlaytime}, \hyperpage{22}
+    \subitem {StartAnimation}, \hyperpage{22}
+    \subitem {starttime}, \hyperpage{24}
+    \subitem {StopAnimation}, \hyperpage{23}
+  \item {CAnimationImage}, \hyperpage{25}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{26}
+  \item {CAnimation\discretionary {-}{}{}Image}
+    \subitem {$\sim $CAnimationImage}, \hyperpage{26}
+    \subitem {CAnimationImage}, \hyperpage{26}
+    \subitem {DelayTime}, \hyperpage{27}
+    \subitem {GetDelayTime}, \hyperpage{26}
+    \subitem {GetTimestamp}, \hyperpage{26}
+    \subitem {SetDelayTime}, \hyperpage{26}
+    \subitem {SetTimestamp}, \hyperpage{27}
+    \subitem {timestamp}, \hyperpage{27}
+  \item {CImage}, \hyperpage{28}
+    \subitem {$\sim $CImage}, \hyperpage{29}
+    \subitem {CImage}, \hyperpage{29}
+    \subitem {Draw}, \hyperpage{30}
+    \subitem {filename}, \hyperpage{32}
+    \subitem {GetSurface}, \hyperpage{30}
+    \subitem {image}, \hyperpage{32}
+    \subitem {LoadFromFile}, \hyperpage{30}
+    \subitem {SetAlpha}, \hyperpage{31}
+    \subitem {SetColorKey}, \hyperpage{31}
+    \subitem {SetImage}, \hyperpage{31}
+    \subitem {SetSourceRect}, \hyperpage{32}
+    \subitem {sourcerect}, \hyperpage{33}
+  \item {Clear}
+    \subitem {CList}, \hyperpage{34}
+  \item {CList}, \hyperpage{34}
+    \subitem {Add}, \hyperpage{34}
+    \subitem {Clear}, \hyperpage{34}
+    \subitem {Count}, \hyperpage{35}
+  \item {Count}
+    \subitem {CList}, \hyperpage{35}
+  \item {CSurfaceChild}, \hyperpage{36}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{37}
+  \item {CSurface\discretionary {-}{}{}Child}
+    \subitem {$\sim $CSurfaceChild}, \hyperpage{37}
+    \subitem {CSurfaceChild}, \hyperpage{37}
+    \subitem {destination}, \hyperpage{39}
+    \subitem {GetDestinationSurface}, \hyperpage{37}
+    \subitem {GetX}, \hyperpage{37}
+    \subitem {GetY}, \hyperpage{38}
+    \subitem {SetDestinationSurface}, \hyperpage{38}
+    \subitem {SetPosition}, \hyperpage{38}
+    \subitem {x}, \hyperpage{39}
+    \subitem {y}, \hyperpage{39}
+  \item {currentframe}
+    \subitem {CAnimation}, \hyperpage{23}
+
+  \indexspace
+
+  \item {defaultframe}
+    \subitem {CAnimation}, \hyperpage{23}
+  \item {DelayTime}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{27}
+  \item {destination}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{39}
+  \item {Draw}
+    \subitem {CAnimation}, \hyperpage{19}
+    \subitem {CImage}, \hyperpage{30}
+
+  \indexspace
+
+  \item {example\_\discretionary {-}{}{}canimation.cc}
+    \subitem {main}, \hyperpage{46}
+  \item {example\_\discretionary {-}{}{}clist\_\discretionary {-}{}{}1.cc}
+    \subitem {main}, \hyperpage{47}
+
+  \indexspace
+
+  \item {filename}
+    \subitem {CImage}, \hyperpage{32}
+  \item {fullplaytime}
+    \subitem {CAnimation}, \hyperpage{24}
+
+  \indexspace
+
+  \item {GetAnimationspeed}
+    \subitem {CAnimation}, \hyperpage{19}
+  \item {GetCurrentFrame}
+    \subitem {CAnimation}, \hyperpage{19}
+  \item {GetCurrentImage}
+    \subitem {CAnimation}, \hyperpage{20}
+  \item {GetDefaultFrame}
+    \subitem {CAnimation}, \hyperpage{20}
+  \item {GetDelayTime}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{26}
+  \item {GetDestinationSurface}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{37}
+  \item {GetSurface}
+    \subitem {CImage}, \hyperpage{30}
+  \item {GetTimestamp}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{26}
+  \item {GetX}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{37}
+  \item {GetY}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{38}
+
+  \indexspace
+
+  \item {image}
+    \subitem {CImage}, \hyperpage{32}
+  \item {ImageList}
+    \subitem {CAnimation}, \hyperpage{24}
+  \item {IsRunning}
+    \subitem {CAnimation}, \hyperpage{20}
+
+  \indexspace
+
+  \item {LoadFromFile}
+    \subitem {CAnimation}, \hyperpage{20}
+    \subitem {CImage}, \hyperpage{30}
+
+  \indexspace
+
+  \item {main}
+    \subitem {example\_\discretionary {-}{}{}canimation.cc}, 
+		\hyperpage{46}
+    \subitem {example\_\discretionary {-}{}{}clist\_\discretionary {-}{}{}1.cc}, 
+		\hyperpage{47}
+
+  \indexspace
+
+  \item {playtime}
+    \subitem {CAnimation}, \hyperpage{24}
+
+  \indexspace
+
+  \item {running}
+    \subitem {CAnimation}, \hyperpage{24}
+
+  \indexspace
+
+  \item {SetAlpha}
+    \subitem {CImage}, \hyperpage{31}
+  \item {SetAnimationspeed}
+    \subitem {CAnimation}, \hyperpage{20}
+  \item {SetColorKey}
+    \subitem {CImage}, \hyperpage{31}
+  \item {SetCurrentFrame}
+    \subitem {CAnimation}, \hyperpage{21}
+  \item {SetDefaultFrame}
+    \subitem {CAnimation}, \hyperpage{21}
+  \item {SetDelayTime}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{26}
+  \item {SetDestinationSurface}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{38}
+  \item {SetImage}
+    \subitem {CImage}, \hyperpage{31}
+  \item {SetPlaytime}
+    \subitem {CAnimation}, \hyperpage{22}
+  \item {SetPosition}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{38}
+  \item {SetSourceRect}
+    \subitem {CImage}, \hyperpage{32}
+  \item {SetTimestamp}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{27}
+  \item {sourcerect}
+    \subitem {CImage}, \hyperpage{33}
+  \item {StartAnimation}
+    \subitem {CAnimation}, \hyperpage{22}
+  \item {starttime}
+    \subitem {CAnimation}, \hyperpage{24}
+  \item {std::vector}, \hyperpage{40}
+  \item {StopAnimation}
+    \subitem {CAnimation}, \hyperpage{23}
+
+  \indexspace
+
+  \item {timestamp}
+    \subitem {CAnimation\discretionary {-}{}{}Image}, \hyperpage{27}
+
+  \indexspace
+
+  \item {versuch2/ Verzeichnisreferenz}, \hyperpage{13}
+  \item {versuch2/animation.cc}, \hyperpage{41}
+  \item {versuch2/animation.h}, \hyperpage{42}
+  \item {versuch2/animationimage.cc}, \hyperpage{43}
+  \item {versuch2/animationimage.h}, \hyperpage{44}
+  \item {versuch2/documentation\_\discretionary {-}{}{}mainsite.h}, 
+		\hyperpage{45}
+  \item {versuch2/example\_\discretionary {-}{}{}canimation.cc}, 
+		\hyperpage{46}
+  \item {versuch2/example\_\discretionary {-}{}{}clist\_\discretionary {-}{}{}1.cc}, 
+		\hyperpage{47}
+  \item {versuch2/image.cc}, \hyperpage{48}
+  \item {versuch2/image.h}, \hyperpage{49}
+  \item {versuch2/list.cc}, \hyperpage{50}
+  \item {versuch2/list.h}, \hyperpage{51}
+  \item {versuch2/surfacechild.cc}, \hyperpage{52}
+  \item {versuch2/surfacechild.h}, \hyperpage{53}
+
+  \indexspace
+
+  \item {x}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{39}
+
+  \indexspace
+
+  \item {y}
+    \subitem {CSurface\discretionary {-}{}{}Child}, \hyperpage{39}
+
+\end{theindex}

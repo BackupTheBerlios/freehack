@@ -1,0 +1,185 @@
+\hypertarget{classCAnimationImage}{
+\section{CAnimation\-Image Klassenreferenz}
+\label{de/df2/classCAnimationImage}\index{CAnimationImage@{CAnimationImage}}
+}
+Die Klasse dient als Frame von \hyperlink{classCAnimation}{CAnimation}.  
+
+
+{\tt \#include $<$animationimage.h$>$}
+
+Klassendiagramm f\"{u}r CAnimation\-Image::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{de/df2/classCAnimationImage}
+\end{center}
+\end{figure}
+\subsection*{\"{O}ffentliche Methoden}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCAnimationImage_a0}{CAnimation\-Image} (SDL\_\-Surface $\ast$dest)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+virtual \hyperlink{classCAnimationImage_a1}{$\sim$CAnimation\-Image} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+virtual void \hyperlink{classCAnimationImage_a2}{Set\-Delay\-Time} (int delaytime)
+\begin{CompactList}\small\item\em Setzt {\em Delay\-Time\/} auf {\em delaytime\/}. \item\end{CompactList}\item 
+virtual int \hyperlink{classCAnimationImage_a3}{Get\-Delay\-Time} ()
+\begin{CompactList}\small\item\em Gibt {\em Delay\-Time\/} zur\"{u}ck. \item\end{CompactList}\item 
+virtual void \hyperlink{classCAnimationImage_a4}{Set\-Timestamp} (int n)
+\begin{CompactList}\small\item\em Setzt {\em timestamp\/} auf {\em n\/}. \item\end{CompactList}\item 
+virtual int \hyperlink{classCAnimationImage_a5}{Get\-Timestamp} ()
+\begin{CompactList}\small\item\em Gibt {\em timestamp\/} zur\"{u}ck. \item\end{CompactList}\end{CompactItemize}
+\subsection*{\"{O}ffentliche Attribute}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classCAnimationImage_o0}{Delay\-Time}
+\begin{CompactList}\small\item\em {\em Delay\-Time\/} legt eine Zeit in Milisekunden fest, die gewartet werden soll, bis der n\"{a}chste Frame von \hyperlink{classCAnimation}{CAnimation} angezeigt wird. \item\end{CompactList}\item 
+int \hyperlink{classCAnimationImage_o1}{timestamp}
+\begin{CompactList}\small\item\em Die Anzahl Milisekunden, die vom Beginn der Animation (\hyperlink{classCAnimation}{CAnimation}) an verstreichen, bis dieser Frame gezeichnet wird. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Ausf\"{u}hrliche Beschreibung}
+Die Klasse dient als Frame von \hyperlink{classCAnimation}{CAnimation}. 
+
+Sie erweitert \hyperlink{classCImage}{CImage} um {\em Delay\-Time\/}, um sie ihre Eignung f\"{u}r Animationen zu bessern.
+
+\begin{Desc}
+\item[Autor:]Bodo Akdeniz \end{Desc}
+\begin{Desc}
+\item[Datum:]01.04.05 \end{Desc}
+\begin{Desc}
+\item[Version:]0.2 \end{Desc}
+
+
+
+
+Definiert in Zeile 26 der Datei animationimage.h.
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classCAnimationImage_a0}{
+\index{CAnimationImage@{CAnimation\-Image}!CAnimationImage@{CAnimationImage}}
+\index{CAnimationImage@{CAnimationImage}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[CAnimationImage]{\setlength{\rightskip}{0pt plus 5cm}CAnimation\-Image::CAnimation\-Image (SDL\_\-Surface $\ast$ {\em dest})}}
+\label{de/df2/classCAnimationImage_a0}
+
+
+Constructor. 
+
+Siehe \hyperlink{classCImage_a0}{CImage::CImage()}
+
+Definiert in Zeile 10 der Datei animationimage.cc.\hypertarget{classCAnimationImage_a1}{
+\index{CAnimationImage@{CAnimation\-Image}!~CAnimationImage@{$\sim$CAnimationImage}}
+\index{~CAnimationImage@{$\sim$CAnimationImage}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[$\sim$CAnimationImage]{\setlength{\rightskip}{0pt plus 5cm}CAnimation\-Image::$\sim$\hyperlink{classCAnimationImage}{CAnimation\-Image} ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{de/df2/classCAnimationImage_a1}
+
+
+Destructor. 
+
+
+
+Definiert in Zeile 14 der Datei animationimage.cc.
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classCAnimationImage_a3}{
+\index{CAnimationImage@{CAnimation\-Image}!GetDelayTime@{GetDelayTime}}
+\index{GetDelayTime@{GetDelayTime}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[GetDelayTime]{\setlength{\rightskip}{0pt plus 5cm}int CAnimation\-Image::Get\-Delay\-Time ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{de/df2/classCAnimationImage_a3}
+
+
+Gibt {\em Delay\-Time\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]{\em Delay\-Time\/}.\end{Desc}
+
+
+Definiert in Zeile 23 der Datei animationimage.cc.\hypertarget{classCAnimationImage_a5}{
+\index{CAnimationImage@{CAnimation\-Image}!GetTimestamp@{GetTimestamp}}
+\index{GetTimestamp@{GetTimestamp}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[GetTimestamp]{\setlength{\rightskip}{0pt plus 5cm}int CAnimation\-Image::Get\-Timestamp ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{de/df2/classCAnimationImage_a5}
+
+
+Gibt {\em timestamp\/} zur\"{u}ck. 
+
+\begin{Desc}
+\item[R\"{u}ckgabe:]Die Funktion gibt den Wert von {\em timestamp\/} zur\"{u}ck. \end{Desc}
+\begin{Desc}
+\item[Siehe auch:]\hyperlink{classCAnimationImage_a4}{Set\-Timestamp()}\end{Desc}
+
+
+Definiert in Zeile 33 der Datei animationimage.cc.\hypertarget{classCAnimationImage_a2}{
+\index{CAnimationImage@{CAnimation\-Image}!SetDelayTime@{SetDelayTime}}
+\index{SetDelayTime@{SetDelayTime}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[SetDelayTime]{\setlength{\rightskip}{0pt plus 5cm}void CAnimation\-Image::Set\-Delay\-Time (int {\em delaytime})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{de/df2/classCAnimationImage_a2}
+
+
+Setzt {\em Delay\-Time\/} auf {\em delaytime\/}. 
+
+\begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em delaytime}]ist die Zeit (in Milisekunden) auf die {\em Delay\-Time\/} gesetzt werden soll.\end{description}
+\end{Desc}
+
+
+Definiert in Zeile 18 der Datei animationimage.cc.
+
+Benutzt Delay\-Time.
+
+Wird benutzt von main().\hypertarget{classCAnimationImage_a4}{
+\index{CAnimationImage@{CAnimation\-Image}!SetTimestamp@{SetTimestamp}}
+\index{SetTimestamp@{SetTimestamp}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[SetTimestamp]{\setlength{\rightskip}{0pt plus 5cm}void CAnimation\-Image::Set\-Timestamp (int {\em n})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{de/df2/classCAnimationImage_a4}
+
+
+Setzt {\em timestamp\/} auf {\em n\/}. 
+
+Die Funktion setzt {\em timestamp\/} auf {\em n\/}. Diese Funktion muss nie von Hand aufgerufen werden. Sie wird von \hyperlink{classCAnimation}{CAnimation} ben\"{o}tigt und aufgerufen. \begin{Desc}
+\item[Parameter:]
+\begin{description}
+\item[{\em n}]ist der Wert auf den {\em timestamp\/} gesetzt wird. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Siehe auch:]\hyperlink{classCAnimationImage_a5}{Get\-Timestamp()}\end{Desc}
+
+
+Definiert in Zeile 28 der Datei animationimage.cc.
+
+Benutzt timestamp.
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classCAnimationImage_o0}{
+\index{CAnimationImage@{CAnimation\-Image}!DelayTime@{DelayTime}}
+\index{DelayTime@{DelayTime}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[DelayTime]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{classCAnimationImage_o0}{CAnimation\-Image::Delay\-Time}}}
+\label{de/df2/classCAnimationImage_o0}
+
+
+{\em Delay\-Time\/} legt eine Zeit in Milisekunden fest, die gewartet werden soll, bis der n\"{a}chste Frame von \hyperlink{classCAnimation}{CAnimation} angezeigt wird. 
+
+
+
+Definiert in Zeile 30 der Datei animationimage.h.
+
+Wird benutzt von Set\-Delay\-Time().\hypertarget{classCAnimationImage_o1}{
+\index{CAnimationImage@{CAnimation\-Image}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!CAnimationImage@{CAnimation\-Image}}
+\subsubsection[timestamp]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{classCAnimationImage_o1}{CAnimation\-Image::timestamp}}}
+\label{de/df2/classCAnimationImage_o1}
+
+
+Die Anzahl Milisekunden, die vom Beginn der Animation (\hyperlink{classCAnimation}{CAnimation}) an verstreichen, bis dieser Frame gezeichnet wird. 
+
+
+
+Definiert in Zeile 33 der Datei animationimage.h.
+
+Wird benutzt von Set\-Timestamp().
+
+Die Dokumentation f\"{u}r diese Klasse wurde erzeugt aufgrund der Dateien:\begin{CompactItemize}
+\item 
+versuch2/backup/\hyperlink{animationimage_8h}{animationimage.h}\item 
+versuch2/backup/\hyperlink{animationimage_8cc}{animationimage.cc}\end{CompactItemize}

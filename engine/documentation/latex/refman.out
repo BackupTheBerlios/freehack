@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{chapter.1}{Documentation einiger Klassen }{}
+\BOOKMARK [1][-]{section.1.1}{Das erste Kapitel}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Das zweite Kapitel}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{SDL Classes Verzeichnishierarchie}{}
+\BOOKMARK [1][-]{section.2.1}{SDL Classes Verzeichnisse}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{SDL Classes Hierarchie-Verzeichnis}{}
+\BOOKMARK [1][-]{section.3.1}{SDL Classes Klassenhierarchie}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{SDL Classes Klassen-Verzeichnis}{}
+\BOOKMARK [1][-]{section.4.1}{SDL Classes Auflistung der Klassen}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{SDL Classes Datei-Verzeichnis}{}
+\BOOKMARK [1][-]{section.5.1}{SDL Classes Auflistung der Dateien}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{SDL Classes Seitenindex}{}
+\BOOKMARK [1][-]{section.6.1}{SDL Classes Zus\344tzliche Informationen}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{SDL Classes Verzeichnisdokumentation}{}
+\BOOKMARK [1][-]{section.7.1}{versuch2/ Verzeichnisreferenz}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{SDL Classes Klassen-Dokumentation}{}
+\BOOKMARK [1][-]{section.8.1}{CAnimation Klassenreferenz}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{CAnimationImage Klassenreferenz}{chapter.8}
+\BOOKMARK [1][-]{section.8.3}{CImage Klassenreferenz}{chapter.8}
+\BOOKMARK [1][-]{section.8.4}{CList< T > Template Klassenreferenz}{chapter.8}
+\BOOKMARK [1][-]{section.8.5}{CSurfaceChild Klassenreferenz}{chapter.8}
+\BOOKMARK [1][-]{section.8.6}{vector Klassenreferenz}{chapter.8}
+\BOOKMARK [0][-]{chapter.9}{SDL Classes Datei-Dokumentation}{}
+\BOOKMARK [1][-]{section.9.1}{versuch2/animation.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.2}{versuch2/animation.h-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.3}{versuch2/animationimage.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.4}{versuch2/animationimage.h-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.5}{versuch2/documentation\137mainsite.h-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.6}{versuch2/example\137canimation.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.7}{versuch2/example\137clist\1371.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.8}{versuch2/image.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.9}{versuch2/image.h-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.10}{versuch2/list.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.11}{versuch2/list.h-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.12}{versuch2/surfacechild.cc-Dateireferenz}{chapter.9}
+\BOOKMARK [1][-]{section.9.13}{versuch2/surfacechild.h-Dateireferenz}{chapter.9}
+\BOOKMARK [0][-]{chapter.10}{SDL Classes Zus\344tzliche Informationen}{}
+\BOOKMARK [1][-]{section.10.1}{Benutzung von CAnimation}{chapter.10}
+\BOOKMARK [1][-]{section.10.2}{Liste der zu erledigenden Dinge}{chapter.10}

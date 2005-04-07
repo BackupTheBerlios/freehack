@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SDL Classes: versuch2/image.h Quellcode</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.3.9.1 -->
+<div class="qindex"><a class="qindex" href="index.html">Hauptseite</a> | <a class="qindex" href="hierarchy.html">Klassenhierarchie</a> | <a class="qindex" href="annotated.html">Auflistung&nbsp;der&nbsp;Klassen</a> | <a class="qindex" href="dirs.html">Verzeichnisse</a> | <a class="qindex" href="files.html">Auflistung&nbsp;der&nbsp;Dateien</a> | <a class="qindex" href="functions.html">Klassen-Elemente</a> | <a class="qindex" href="pages.html">Zusätzliche&nbsp;Informationen</a></div>
+<div class="nav">
+<a class="el" href="dir_000000.html">versuch2</a></div>
+<h1>image.h</h1><a href="image_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment">00001 
+00011 <span class="preprocessor">#ifndef IMAGE_H</span>
+00012 <span class="preprocessor"></span><span class="preprocessor">#define IMAGE_H</span>
+00013 <span class="preprocessor"></span>
+00014 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+00015 <span class="preprocessor">#include &lt;string&gt;</span>
+00016 
+00017 <span class="preprocessor">#include "<a class="code" href="surfacechild_8h.html">surfacechild.h</a>"</span>
+00018 
+00020 
+<a name="l00029"></a><a class="code" href="classCImage.html">00029</a> <span class="keyword">class </span><a class="code" href="classCImage.html">CImage</a> : <span class="keyword">public</span> <a class="code" href="classCSurfaceChild.html">CSurfaceChild</a>
+00030 {
+00031 <span class="keyword">public</span>:
+00032         <span class="comment">// Variables</span>
+00033         
+<a name="l00035"></a><a class="code" href="classCImage.html#o0">00035</a>         SDL_Surface *image;
+<a name="l00037"></a><a class="code" href="classCImage.html#o1">00037</a>         SDL_Rect *sourcerect;
+<a name="l00039"></a><a class="code" href="classCImage.html#o2">00039</a>         std::string filename;
+00040         
+00041         <span class="comment">// Initiation, etc.</span>
+00042         
+00044 
+00052         <a class="code" href="classCImage.html#a0">CImage</a>(SDL_Surface *dest);
+00054         <span class="keyword">virtual</span> <a class="code" href="classCImage.html#a1">~CImage</a>();
+00055 
+00056         <span class="comment">// Input Functions</span>
+00057         
+00059 
+00064         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a2">LoadFromFile</a>(std::string file);
+00065 
+00067 
+00075         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a3">SetColorKey</a>(Uint8 r, Uint8 g, Uint8 b);
+00076 
+00078 
+00082         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a4">SetAlpha</a>(Uint8 a);
+00083 
+00085 
+00092         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a5">SetImage</a>(SDL_Surface *img);
+00093 
+00095 
+00103         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a6">SetSourceRect</a>(SDL_Rect *src);
+00104 
+00106 
+00115         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a6">SetSourceRect</a>(<span class="keywordtype">int</span> rx, <span class="keywordtype">int</span> ry, <span class="keywordtype">int</span> rw, <span class="keywordtype">int</span> rh);
+00116 
+00117         <span class="comment">// Output Functions</span>
+00118         
+00120 
+00131         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a8">Draw</a>();
+00132 
+00134 
+00139         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCImage.html#a8">Draw</a>(<span class="keywordtype">int</span> xpos, <span class="keywordtype">int</span> ypos);
+00140 
+00142 
+00146         <span class="keyword">virtual</span> SDL_Surface *<a class="code" href="classCImage.html#a10">GetSurface</a>();
+00147 };
+00148 
+00149 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Erzeugt am Sun Apr 3 16:41:05 2005 für SDL Classes von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.3.9.1 </small></address>
+</body>
+</html>

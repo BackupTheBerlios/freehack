@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SDL Classes: CAnimationImage Klassenreferenz</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.3.9.1 -->
+<div class="qindex"><a class="qindex" href="index.html">Hauptseite</a> | <a class="qindex" href="hierarchy.html">Klassenhierarchie</a> | <a class="qindex" href="annotated.html">Auflistung&nbsp;der&nbsp;Klassen</a> | <a class="qindex" href="dirs.html">Verzeichnisse</a> | <a class="qindex" href="files.html">Auflistung&nbsp;der&nbsp;Dateien</a> | <a class="qindex" href="functions.html">Klassen-Elemente</a> | <a class="qindex" href="pages.html">Zusätzliche&nbsp;Informationen</a></div>
+<h1>CAnimationImage Klassenreferenz</h1>Die Klasse dient als Frame von <a class="el" href="classCAnimation.html">CAnimation</a>.  
+<a href="#_details">Mehr ...</a>
+<p>
+<code>#include &lt;<a class="el" href="animationimage_8h-source.html">animationimage.h</a>&gt;</code>
+<p>
+<p>Klassendiagramm für CAnimationImage:
+<p><center><img src="classCAnimationImage.png" usemap="#CAnimationImage_map" border="0" alt=""></center>
+<map name="CAnimationImage_map">
+<area href="classCImage.html" alt="CImage" shape="rect" coords="0,56,109,80">
+<area href="classCSurfaceChild.html" alt="CSurfaceChild" shape="rect" coords="0,0,109,24">
+</map>
+<a href="classCAnimationImage-members.html">Aufstellung aller Elemente</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Öffentliche Methoden</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#a0">CAnimationImage</a> (SDL_Surface *dest)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor.  <a href="#a0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#a1">~CAnimationImage</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.  <a href="#a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#a2">SetDelayTime</a> (int delaytime)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setzt <em>DelayTime</em> auf <em>delaytime</em>.  <a href="#a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#a3">GetDelayTime</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gibt <em>DelayTime</em> zurück.  <a href="#a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#a4">SetTimestamp</a> (int n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setzt <em>timestamp</em> auf <em>n</em>.  <a href="#a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#a5">GetTimestamp</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gibt <em>timestamp</em> zurück.  <a href="#a5"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Öffentliche Attribute</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#o0">DelayTime</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><em>DelayTime</em> legt eine Zeit in Milisekunden fest, die gewartet werden soll, bis der nächste Frame von <a class="el" href="classCAnimation.html">CAnimation</a> angezeigt wird.  <a href="#o0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCAnimationImage.html#o1">timestamp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Die Anzahl Milisekunden, die vom Beginn der Animation (<a class="el" href="classCAnimation.html">CAnimation</a>) an verstreichen, bis dieser Frame gezeichnet wird.  <a href="#o1"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Ausführliche Beschreibung</h2>
+Die Klasse dient als Frame von <a class="el" href="classCAnimation.html">CAnimation</a>. 
+<p>
+Sie erweitert <a class="el" href="classCImage.html">CImage</a> um <em>DelayTime</em>, um sie ihre Eignung für Animationen zu bessern.<p>
+<dl compact><dt><b>Autor:</b></dt><dd>Bodo Akdeniz </dd></dl>
+<dl compact><dt><b>Datum:</b></dt><dd>01.04.05 </dd></dl>
+<dl compact><dt><b>Version:</b></dt><dd>0.2 </dd></dl>
+
+<p>
+<hr><h2>Beschreibung der Konstruktoren und Destruktoren</h2>
+<a class="anchor" name="a0" doxytag="CAnimationImage::CAnimationImage"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">CAnimationImage::CAnimationImage           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">SDL_Surface *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>dest</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Constructor. 
+<p>
+Siehe <a class="el" href="classCImage.html#a0">CImage::CImage()</a>    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="CAnimationImage::~CAnimationImage"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">virtual CAnimationImage::~<a class="el" href="classCAnimationImage.html">CAnimationImage</a>           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Destructor. 
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentation der Elementfunktionen</h2>
+<a class="anchor" name="a3" doxytag="CAnimationImage::GetDelayTime"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">virtual int CAnimationImage::GetDelayTime           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Gibt <em>DelayTime</em> zurück. 
+<p>
+<dl compact><dt><b>Rückgabe:</b></dt><dd><em>DelayTime</em>.</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="CAnimationImage::GetTimestamp"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">virtual int CAnimationImage::GetTimestamp           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Gibt <em>timestamp</em> zurück. 
+<p>
+<dl compact><dt><b>Rückgabe:</b></dt><dd>Die Funktion gibt den Wert von <em>timestamp</em> zurück. </dd></dl>
+<dl compact><dt><b>Siehe auch:</b></dt><dd><a class="el" href="classCAnimationImage.html#a4">SetTimestamp()</a></dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="CAnimationImage::SetDelayTime"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">virtual void CAnimationImage::SetDelayTime           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>delaytime</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Setzt <em>DelayTime</em> auf <em>delaytime</em>. 
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>delaytime</em>&nbsp;</td><td>ist die Zeit (in Milisekunden) auf die <em>DelayTime</em> gesetzt werden soll.</td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="CAnimationImage::SetTimestamp"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">virtual void CAnimationImage::SetTimestamp           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Setzt <em>timestamp</em> auf <em>n</em>. 
+<p>
+Die Funktion setzt <em>timestamp</em> auf <em>n</em>. Diese Funktion muss nie von Hand aufgerufen werden. Sie wird von <a class="el" href="classCAnimation.html">CAnimation</a> benötigt und aufgerufen. <dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>ist der Wert auf den <em>timestamp</em> gesetzt wird. </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Siehe auch:</b></dt><dd><a class="el" href="classCAnimationImage.html#a5">GetTimestamp()</a></dd></dl>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentation der Datenelemente</h2>
+<a class="anchor" name="o0" doxytag="CAnimationImage::DelayTime"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="classCAnimationImage.html#o0">CAnimationImage::DelayTime</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+<em>DelayTime</em> legt eine Zeit in Milisekunden fest, die gewartet werden soll, bis der nächste Frame von <a class="el" href="classCAnimation.html">CAnimation</a> angezeigt wird. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="o1" doxytag="CAnimationImage::timestamp"></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int <a class="el" href="classCAnimationImage.html#o1">CAnimationImage::timestamp</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Die Anzahl Milisekunden, die vom Beginn der Animation (<a class="el" href="classCAnimation.html">CAnimation</a>) an verstreichen, bis dieser Frame gezeichnet wird. 
+<p>
+    </td>
+  </tr>
+</table>
+<hr>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>versuch2/<a class="el" href="animationimage_8h-source.html">animationimage.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Erzeugt am Sun Apr 3 16:41:05 2005 für SDL Classes von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.3.9.1 </small></address>
+</body>
+</html>

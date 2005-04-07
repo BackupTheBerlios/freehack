@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SDL Classes: versuch2/example_canimation.cc Quellcode</title>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.3.9.1 -->
+<div class="qindex"><a class="qindex" href="../../index.html">Hauptseite</a> | <a class="qindex" href="../../hierarchy.html">Klassenhierarchie</a> | <a class="qindex" href="../../annotated.html">Auflistung&nbsp;der&nbsp;Klassen</a> | <a class="qindex" href="../../dirs.html">Verzeichnisse</a> | <a class="qindex" href="../../files.html">Auflistung&nbsp;der&nbsp;Dateien</a> | <a class="qindex" href="../../functions.html">Klassen-Elemente</a> | <a class="qindex" href="../../globals.html">Datei-Elemente</a> | <a class="qindex" href="../../pages.html">Zusätzliche&nbsp;Informationen</a></div>
+<div class="nav">
+<a class="el" href="../../dir_000000.html">versuch2</a></div>
+<h1>example_canimation.cc</h1><a href="../../dd/df4/example__canimation_8cc.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><pre class="fragment">00001 
+00018 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+00019 <span class="preprocessor">#include &lt;iostream&gt;</span>
+00020 
+00021 <span class="preprocessor">#include "<a class="code" href="../../dd/d87/animation_8h.html">animation.h</a>"</span>          <span class="comment">// für CAnimation</span>
+00022 <span class="preprocessor">#include "animationimage.h"</span>     <span class="comment">// für CAnimationImage</span>
+00023 
+<a name="l00024"></a><a class="code" href="../../dd/df4/example__canimation_8cc.html#a0">00024</a> <span class="keywordtype">int</span> <a class="code" href="../../dd/df4/example__canimation_8cc.html#a0">main</a>()
+00025 {
+00026         SDL_Surface *screen;
+00027         <span class="keywordtype">int</span> done=0;
+00028         <a class="code" href="../../da/d99/classCAnimation.html">CAnimation</a> *animation;          <span class="comment">// Unsere Animation</span>
+00029         CAnimationImage *pic1, *pic2;   <span class="comment">// Die 2 Bilder für die Animation</span>
+00030         
+00031         <span class="comment">// SDL stuff</span>
+00032         <span class="keywordflow">if</span> (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_NOPARACHUTE) &lt; 0)
+00033         {
+00034                 std::cout &lt;&lt; <span class="stringliteral">"Unable to init SDL: "</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+00035                 <span class="keywordflow">return</span> 1;
+00036         }
+00037         atexit(SDL_Quit);
+00038 
+00039         <span class="keywordflow">if</span> ((screen=SDL_SetVideoMode(200, 200, 32, SDL_HWSURFACE|SDL_DOUBLEBUF)) == NULL)
+00040         {
+00041                 std::cout &lt;&lt; <span class="stringliteral">"Unable to set videomode: "</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+00042                 <span class="keywordflow">return</span> 1;
+00043         }
+00044         
+00045         
+00046         <span class="comment">// Bilder laden und DelayTime setzten</span>
+00047         
+00048         <span class="comment">/* Was hier als Ausgabe übergeben wird ist egal, da es sowiso von</span>
+00049 <span class="comment">         * CAnimation überschrieben wird, wenn man das Bild hinzufügt.</span>
+00050 <span class="comment">         * Man darf nur nicht  versuchen das Bild selbst zu zeichnen.</span>
+00051 <span class="comment">         */</span>
+00052         pic1 = <span class="keyword">new</span> CAnimationImage(screen);  
+00053         pic1-&gt;LoadFromFile(<span class="stringliteral">"../images/examples/zahnrad1.bmp"</span>);
+00054         pic1-&gt;SetDelayTime(500);  <span class="comment">// 500 Milisekunden!</span>
+00055 
+00056         pic2 = <span class="keyword">new</span> CAnimationImage(screen);
+00057         pic2-&gt;LoadFromFile(<span class="stringliteral">"../images/examples/zahnrad2.bmp"</span>);
+00058         pic2-&gt;SetDelayTime(500);  <span class="comment">// 500 Milisekunden!</span>
+00059 
+00060         
+00061         <span class="comment">// Animation vorbereiten</span>
+00062         animation = <span class="keyword">new</span> <a class="code" href="../../da/d99/classCAnimation.html">CAnimation</a>(screen);  <span class="comment">// initialisierung; Ausgabe soll auf screen stattfinden</span>
+00063         animation-&gt;<a class="code" href="../../da/d99/classCAnimation.html#o0">ImageList</a>.<a class="code" href="../../da/d2a/classCList.html#a0">Add</a>(pic1);
+00064         animation-&gt;<a class="code" href="../../da/d99/classCAnimation.html#o0">ImageList</a>.<a class="code" href="../../da/d2a/classCList.html#a0">Add</a>(pic2);
+00065         animation-&gt;<a class="code" href="../../da/d99/classCAnimation.html#a2">SetAnimationspeed</a>(0.8);
+00066         animation-&gt;<a class="code" href="../../d3/d44/classCSurfaceChild.html#a3">SetPosition</a>(0, 0);
+00067 
+00068         <span class="keywordflow">while</span> (done == 0)  <span class="comment">// Spielschleife</span>
+00069         {
+00070                 SDL_Event event;
+00071                 <span class="comment">// Events abarbeiten</span>
+00072                 <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event))
+00073                 {
+00074                         <span class="keywordflow">if</span> (event.type == SDL_QUIT)
+00075                                 done = 1;
+00076                         
+00077                         <span class="keywordflow">if</span> (event.type == SDL_KEYDOWN)
+00078                         {
+00079                                 <span class="keywordflow">if</span> (event.key.keysym.sym == SDLK_ESCAPE)
+00080                                         done = 1;
+00081                                 <span class="keywordflow">if</span> (event.key.keysym.sym == SDLK_SPACE)
+00082                                 {
+00083                                         <span class="keywordflow">if</span> (animation-&gt;IsRunning())
+00084                                                 animation-&gt;<a class="code" href="../../da/d99/classCAnimation.html#a7">StopAnimation</a>();
+00085                                         <span class="keywordflow">else</span>
+00086                                                 animation-&gt;<a class="code" href="../../da/d99/classCAnimation.html#a6">StartAnimation</a>();
+00087                                 }
+00088                         }
+00089                 }
+00090         
+00091                 animation-&gt;Draw();  <span class="comment">// aktuelles Bild der Animation zeichnen</span>
+00092                 
+00093                 SDL_Flip(screen);  <span class="comment">// Bild aktualisieren</span>
+00094         }
+00095 }
+</pre></div><hr size="1"><address style="align: right;"><small>Erzeugt am Tue Apr 5 17:17:13 2005 für SDL Classes von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.3.9.1 </small></address>
+</body>
+</html>

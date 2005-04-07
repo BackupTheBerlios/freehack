@@ -1,0 +1,152 @@
+\indexentry{versuch2/ Verzeichnisreferenz@{versuch2/ Verzeichnisreferenz}|hyperpage}{13}
+\indexentry{CAnimation@{CAnimation}|hyperpage}{15}
+\indexentry{CAnimation@{CAnimation}!CAnimation@{CAnimation}|hyperpage}{18}
+\indexentry{CAnimation@{CAnimation}!CAnimation@{CAnimation}|hyperpage}{18}
+\indexentry{CAnimation@{CAnimation}!\nobreakspace  {}CAnimation@{$\sim $CAnimation}|hyperpage}{18}
+\indexentry{\nobreakspace  {}CAnimation@{$\sim $CAnimation}!CAnimation@{CAnimation}|hyperpage}{18}
+\indexentry{CAnimation@{CAnimation}!CalculateCurrentFrame@{CalculateCurrentFrame}|hyperpage}{18}
+\indexentry{CalculateCurrentFrame@{CalculateCurrentFrame}!CAnimation@{CAnimation}|hyperpage}{18}
+\indexentry{CAnimation@{CAnimation}!CalculateFullPlaytime@{CalculateFullPlaytime}|hyperpage}{18}
+\indexentry{CalculateFullPlaytime@{CalculateFullPlaytime}!CAnimation@{CAnimation}|hyperpage}{18}
+\indexentry{CAnimation@{CAnimation}!CalculatePlaytime@{CalculatePlaytime}|hyperpage}{18}
+\indexentry{CalculatePlaytime@{CalculatePlaytime}!CAnimation@{CAnimation}|hyperpage}{18}
+\indexentry{CAnimation@{CAnimation}!Draw@{Draw}|hyperpage}{19}
+\indexentry{Draw@{Draw}!CAnimation@{CAnimation}|hyperpage}{19}
+\indexentry{CAnimation@{CAnimation}!Draw@{Draw}|hyperpage}{19}
+\indexentry{Draw@{Draw}!CAnimation@{CAnimation}|hyperpage}{19}
+\indexentry{CAnimation@{CAnimation}!GetAnimationspeed@{GetAnimationspeed}|hyperpage}{19}
+\indexentry{GetAnimationspeed@{GetAnimationspeed}!CAnimation@{CAnimation}|hyperpage}{19}
+\indexentry{CAnimation@{CAnimation}!GetCurrentFrame@{GetCurrentFrame}|hyperpage}{19}
+\indexentry{GetCurrentFrame@{GetCurrentFrame}!CAnimation@{CAnimation}|hyperpage}{19}
+\indexentry{CAnimation@{CAnimation}!GetCurrentImage@{GetCurrentImage}|hyperpage}{20}
+\indexentry{GetCurrentImage@{GetCurrentImage}!CAnimation@{CAnimation}|hyperpage}{20}
+\indexentry{CAnimation@{CAnimation}!GetDefaultFrame@{GetDefaultFrame}|hyperpage}{20}
+\indexentry{GetDefaultFrame@{GetDefaultFrame}!CAnimation@{CAnimation}|hyperpage}{20}
+\indexentry{CAnimation@{CAnimation}!IsRunning@{IsRunning}|hyperpage}{20}
+\indexentry{IsRunning@{IsRunning}!CAnimation@{CAnimation}|hyperpage}{20}
+\indexentry{CAnimation@{CAnimation}!LoadFromFile@{LoadFromFile}|hyperpage}{20}
+\indexentry{LoadFromFile@{LoadFromFile}!CAnimation@{CAnimation}|hyperpage}{20}
+\indexentry{CAnimation@{CAnimation}!SetAnimationspeed@{SetAnimationspeed}|hyperpage}{20}
+\indexentry{SetAnimationspeed@{SetAnimationspeed}!CAnimation@{CAnimation}|hyperpage}{20}
+\indexentry{CAnimation@{CAnimation}!SetCurrentFrame@{SetCurrentFrame}|hyperpage}{21}
+\indexentry{SetCurrentFrame@{SetCurrentFrame}!CAnimation@{CAnimation}|hyperpage}{21}
+\indexentry{CAnimation@{CAnimation}!SetCurrentFrame@{SetCurrentFrame}|hyperpage}{21}
+\indexentry{SetCurrentFrame@{SetCurrentFrame}!CAnimation@{CAnimation}|hyperpage}{21}
+\indexentry{CAnimation@{CAnimation}!SetDefaultFrame@{SetDefaultFrame}|hyperpage}{21}
+\indexentry{SetDefaultFrame@{SetDefaultFrame}!CAnimation@{CAnimation}|hyperpage}{21}
+\indexentry{CAnimation@{CAnimation}!SetPlaytime@{SetPlaytime}|hyperpage}{22}
+\indexentry{SetPlaytime@{SetPlaytime}!CAnimation@{CAnimation}|hyperpage}{22}
+\indexentry{CAnimation@{CAnimation}!SetPlaytime@{SetPlaytime}|hyperpage}{22}
+\indexentry{SetPlaytime@{SetPlaytime}!CAnimation@{CAnimation}|hyperpage}{22}
+\indexentry{CAnimation@{CAnimation}!StartAnimation@{StartAnimation}|hyperpage}{22}
+\indexentry{StartAnimation@{StartAnimation}!CAnimation@{CAnimation}|hyperpage}{22}
+\indexentry{CAnimation@{CAnimation}!StopAnimation@{StopAnimation}|hyperpage}{23}
+\indexentry{StopAnimation@{StopAnimation}!CAnimation@{CAnimation}|hyperpage}{23}
+\indexentry{CAnimation@{CAnimation}!animationspeed@{animationspeed}|hyperpage}{23}
+\indexentry{animationspeed@{animationspeed}!CAnimation@{CAnimation}|hyperpage}{23}
+\indexentry{CAnimation@{CAnimation}!currentframe@{currentframe}|hyperpage}{23}
+\indexentry{currentframe@{currentframe}!CAnimation@{CAnimation}|hyperpage}{23}
+\indexentry{CAnimation@{CAnimation}!defaultframe@{defaultframe}|hyperpage}{23}
+\indexentry{defaultframe@{defaultframe}!CAnimation@{CAnimation}|hyperpage}{23}
+\indexentry{CAnimation@{CAnimation}!fullplaytime@{fullplaytime}|hyperpage}{24}
+\indexentry{fullplaytime@{fullplaytime}!CAnimation@{CAnimation}|hyperpage}{24}
+\indexentry{CAnimation@{CAnimation}!ImageList@{ImageList}|hyperpage}{24}
+\indexentry{ImageList@{ImageList}!CAnimation@{CAnimation}|hyperpage}{24}
+\indexentry{CAnimation@{CAnimation}!playtime@{playtime}|hyperpage}{24}
+\indexentry{playtime@{playtime}!CAnimation@{CAnimation}|hyperpage}{24}
+\indexentry{CAnimation@{CAnimation}!running@{running}|hyperpage}{24}
+\indexentry{running@{running}!CAnimation@{CAnimation}|hyperpage}{24}
+\indexentry{CAnimation@{CAnimation}!starttime@{starttime}|hyperpage}{24}
+\indexentry{starttime@{starttime}!CAnimation@{CAnimation}|hyperpage}{24}
+\indexentry{CAnimationImage@{CAnimationImage}|hyperpage}{25}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!CAnimationImage@{CAnimationImage}|hyperpage}{26}
+\indexentry{CAnimationImage@{CAnimationImage}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{26}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!\nobreakspace  {}CAnimationImage@{$\sim $CAnimationImage}|hyperpage}{26}
+\indexentry{\nobreakspace  {}CAnimationImage@{$\sim $CAnimationImage}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{26}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!GetDelayTime@{GetDelayTime}|hyperpage}{26}
+\indexentry{GetDelayTime@{GetDelayTime}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{26}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!GetTimestamp@{GetTimestamp}|hyperpage}{26}
+\indexentry{GetTimestamp@{GetTimestamp}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{26}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!SetDelayTime@{SetDelayTime}|hyperpage}{26}
+\indexentry{SetDelayTime@{SetDelayTime}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{26}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!SetTimestamp@{SetTimestamp}|hyperpage}{27}
+\indexentry{SetTimestamp@{SetTimestamp}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{27}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!DelayTime@{DelayTime}|hyperpage}{27}
+\indexentry{DelayTime@{DelayTime}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{27}
+\indexentry{CAnimationImage@{CAnimation\discretionary {-}{}{}Image}!timestamp@{timestamp}|hyperpage}{27}
+\indexentry{timestamp@{timestamp}!CAnimationImage@{CAnimation\discretionary {-}{}{}Image}|hyperpage}{27}
+\indexentry{CImage@{CImage}|hyperpage}{28}
+\indexentry{CImage@{CImage}!CImage@{CImage}|hyperpage}{29}
+\indexentry{CImage@{CImage}!CImage@{CImage}|hyperpage}{29}
+\indexentry{CImage@{CImage}!\nobreakspace  {}CImage@{$\sim $CImage}|hyperpage}{29}
+\indexentry{\nobreakspace  {}CImage@{$\sim $CImage}!CImage@{CImage}|hyperpage}{29}
+\indexentry{CImage@{CImage}!Draw@{Draw}|hyperpage}{30}
+\indexentry{Draw@{Draw}!CImage@{CImage}|hyperpage}{30}
+\indexentry{CImage@{CImage}!Draw@{Draw}|hyperpage}{30}
+\indexentry{Draw@{Draw}!CImage@{CImage}|hyperpage}{30}
+\indexentry{CImage@{CImage}!GetSurface@{GetSurface}|hyperpage}{30}
+\indexentry{GetSurface@{GetSurface}!CImage@{CImage}|hyperpage}{30}
+\indexentry{CImage@{CImage}!LoadFromFile@{LoadFromFile}|hyperpage}{30}
+\indexentry{LoadFromFile@{LoadFromFile}!CImage@{CImage}|hyperpage}{30}
+\indexentry{CImage@{CImage}!SetAlpha@{SetAlpha}|hyperpage}{31}
+\indexentry{SetAlpha@{SetAlpha}!CImage@{CImage}|hyperpage}{31}
+\indexentry{CImage@{CImage}!SetColorKey@{SetColorKey}|hyperpage}{31}
+\indexentry{SetColorKey@{SetColorKey}!CImage@{CImage}|hyperpage}{31}
+\indexentry{CImage@{CImage}!SetImage@{SetImage}|hyperpage}{31}
+\indexentry{SetImage@{SetImage}!CImage@{CImage}|hyperpage}{31}
+\indexentry{CImage@{CImage}!SetSourceRect@{SetSourceRect}|hyperpage}{32}
+\indexentry{SetSourceRect@{SetSourceRect}!CImage@{CImage}|hyperpage}{32}
+\indexentry{CImage@{CImage}!SetSourceRect@{SetSourceRect}|hyperpage}{32}
+\indexentry{SetSourceRect@{SetSourceRect}!CImage@{CImage}|hyperpage}{32}
+\indexentry{CImage@{CImage}!filename@{filename}|hyperpage}{32}
+\indexentry{filename@{filename}!CImage@{CImage}|hyperpage}{32}
+\indexentry{CImage@{CImage}!image@{image}|hyperpage}{32}
+\indexentry{image@{image}!CImage@{CImage}|hyperpage}{32}
+\indexentry{CImage@{CImage}!sourcerect@{sourcerect}|hyperpage}{33}
+\indexentry{sourcerect@{sourcerect}!CImage@{CImage}|hyperpage}{33}
+\indexentry{CList@{CList}|hyperpage}{34}
+\indexentry{CList@{CList}!Add@{Add}|hyperpage}{34}
+\indexentry{Add@{Add}!CList@{CList}|hyperpage}{34}
+\indexentry{CList@{CList}!Clear@{Clear}|hyperpage}{34}
+\indexentry{Clear@{Clear}!CList@{CList}|hyperpage}{34}
+\indexentry{CList@{CList}!Count@{Count}|hyperpage}{35}
+\indexentry{Count@{Count}!CList@{CList}|hyperpage}{35}
+\indexentry{CSurfaceChild@{CSurfaceChild}|hyperpage}{36}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!CSurfaceChild@{CSurfaceChild}|hyperpage}{37}
+\indexentry{CSurfaceChild@{CSurfaceChild}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{37}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!\nobreakspace  {}CSurfaceChild@{$\sim $CSurfaceChild}|hyperpage}{37}
+\indexentry{\nobreakspace  {}CSurfaceChild@{$\sim $CSurfaceChild}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{37}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!GetDestinationSurface@{GetDestinationSurface}|hyperpage}{37}
+\indexentry{GetDestinationSurface@{GetDestinationSurface}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{37}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!GetX@{GetX}|hyperpage}{37}
+\indexentry{GetX@{GetX}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{37}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!GetY@{GetY}|hyperpage}{38}
+\indexentry{GetY@{GetY}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{38}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!SetDestinationSurface@{SetDestinationSurface}|hyperpage}{38}
+\indexentry{SetDestinationSurface@{SetDestinationSurface}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{38}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!SetPosition@{SetPosition}|hyperpage}{38}
+\indexentry{SetPosition@{SetPosition}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{38}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!destination@{destination}|hyperpage}{39}
+\indexentry{destination@{destination}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{39}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!x@{x}|hyperpage}{39}
+\indexentry{x@{x}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{39}
+\indexentry{CSurfaceChild@{CSurface\discretionary {-}{}{}Child}!y@{y}|hyperpage}{39}
+\indexentry{y@{y}!CSurfaceChild@{CSurface\discretionary {-}{}{}Child}|hyperpage}{39}
+\indexentry{std::vector@{std::vector}|hyperpage}{40}
+\indexentry{versuch2/animation.cc@{versuch2/animation.cc}|hyperpage}{41}
+\indexentry{versuch2/animation.h@{versuch2/animation.h}|hyperpage}{42}
+\indexentry{versuch2/animationimage.cc@{versuch2/animationimage.cc}|hyperpage}{43}
+\indexentry{versuch2/animationimage.h@{versuch2/animationimage.h}|hyperpage}{44}
+\indexentry{versuch2/documentation_mainsite.h@{versuch2/documentation\_\discretionary {-}{}{}mainsite.h}|hyperpage}{45}
+\indexentry{versuch2/example_canimation.cc@{versuch2/example\_\discretionary {-}{}{}canimation.cc}|hyperpage}{46}
+\indexentry{example_canimation.cc@{example\_\discretionary {-}{}{}canimation.cc}!main@{main}|hyperpage}{46}
+\indexentry{main@{main}!example_canimation.cc@{example\_\discretionary {-}{}{}canimation.cc}|hyperpage}{46}
+\indexentry{versuch2/example_clist_1.cc@{versuch2/example\_\discretionary {-}{}{}clist\_\discretionary {-}{}{}1.cc}|hyperpage}{47}
+\indexentry{example_clist_1.cc@{example\_\discretionary {-}{}{}clist\_\discretionary {-}{}{}1.cc}!main@{main}|hyperpage}{47}
+\indexentry{main@{main}!example_clist_1.cc@{example\_\discretionary {-}{}{}clist\_\discretionary {-}{}{}1.cc}|hyperpage}{47}
+\indexentry{versuch2/image.cc@{versuch2/image.cc}|hyperpage}{48}
+\indexentry{versuch2/image.h@{versuch2/image.h}|hyperpage}{49}
+\indexentry{versuch2/list.cc@{versuch2/list.cc}|hyperpage}{50}
+\indexentry{versuch2/list.h@{versuch2/list.h}|hyperpage}{51}
+\indexentry{versuch2/surfacechild.cc@{versuch2/surfacechild.cc}|hyperpage}{52}
+\indexentry{versuch2/surfacechild.h@{versuch2/surfacechild.h}|hyperpage}{53}
