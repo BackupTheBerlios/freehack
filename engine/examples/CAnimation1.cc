@@ -36,7 +36,7 @@ int main()
 	}
 	
 	
-	// Bilder laden und DelayTime setzten
+	// Bilder laden
 	
 	/* Was hier als Ausgabe übergeben wird ist egal, da es sowiso von
 	 * CAnimation überschrieben wird, wenn man das Bild hinzufügt.

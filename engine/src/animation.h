@@ -7,7 +7,36 @@
 
 /**
  * \page CAnimation_Usage Die Benutzung von CAnimation
- * blabla bla
+ * Mit einem Objekt vom Typ CAnimation können Animationen erstellt,
+ * und dargestellt werden. Es ist von CSurfaceChild abgeleitet und
+ * kann somit in einem SDL_Surface positionniert werden. \n
+ * Der grobe Ablaut bei der Benutzung von CAnimatin dürfte ungefähr
+ * so aussehen:
+ *
+ * -# Anlegen eines Objekts
+ * -# Hinzufügen von Einzelbildern
+ * -# ggf. noch ein paar "Feineinstellungen" (Geschwindigkeit etc.)
+ * -# ggf. Play() oder Stop() ausführen (in der Spielschleife)
+ * -# Zeichnen (in der Spielschleife)
+ *  
+ * Durch den Aufruf von Draw() wird automatisch der Frame
+ * ermittelt der gezeichnet werden soll, somit muss man sich als
+ * Benutzer der Klasse mit solchen dingen nicht mehr rumärgern. \n
+ * Ein Beispielprogramm gibts in der Datei \ref CAnimation1.cc \n
+ * Das Programm läd 2 Bilder in die Animation und startet bzw. stoppt
+ * sie mit einem Druck auf die Leertaste.\n
+ * Die Bilder werden erst in CImage-Objekte geladen und dann CAnimation
+ * hinzugefügt.
+ * Das muss man nicht unbedingt so machen. Folgender Codeausschnitt läd
+ * die Bilder direkt über CAnimation.
+ * \code
+ * CAnimation *anim;
+ * anim->ImageList.Add(NULL);
+ * anim->ImageList[0]->LoadFromFile("pic1.bmp");
+ * anim->ImageList.Add(NULL);
+ * anim->ImageList[0]->LoadFromFile("pic2.bmp");
+ * \endcode
+ * \todo Das kleine Code-Beispiel sollte man vllt. noch testen.
  */
 
 
