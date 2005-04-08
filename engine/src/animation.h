@@ -34,7 +34,7 @@
  * anim->ImageList.Add(NULL);
  * anim->ImageList[0]->LoadFromFile("pic1.bmp");
  * anim->ImageList.Add(NULL);
- * anim->ImageList[0]->LoadFromFile("pic2.bmp");
+ * anim->ImageList[1]->LoadFromFile("pic2.bmp");
  * \endcode
  * \todo Das kleine Code-Beispiel sollte man vllt. noch testen.
  */
